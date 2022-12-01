@@ -1,0 +1,70 @@
+
+@font-face {
+    font-family: 'Heura';
+    src: url(./assets/fonts/Heura.woff);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 200px;
+    background-color: #f9e021;
+    font-family: 'Heura';
+}
+
+.img-container{
+    max-width: 90px;
+}
+
+.menu-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    transition: 0.4s;
+    transition-timing-function: ease;
+    background-color: white;
+}
+
+@media screen and (min-width: 1024px){
+    .menu-button{
+        display: none;
+    }
+ } 
+
+.menu-button:hover{
+    background-color: black;
+    color: white;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1023px){
+    .menu-list{
+        display: none;
+    }
+ } 
+   
+.menu-list a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    margin-right: 30px;
+    transition: 0.4s;
+    transition-timing-function: ease;
+}
+
+a:hover {
+    color: white;
+    border-bottom: 3px solid white;
+}
